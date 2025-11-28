@@ -1,18 +1,34 @@
-# React + Vite
+# Product Listing Page - MERN Internship Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
+This project is a **Product Listing Page** built using the MERN stack (MongoDB, Express.js, React.js, Node.js).  
+The app demonstrates the ability to fetch, display, and manage products using React on the frontend, Node.js + Express on the backend, and MongoDB for data storage.  
 
-Currently, two official plugins are available:
+This project was submitted as part of the **Full Stack MERN Internship assignment** at Nepasys Pvt Ltd.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Features
+- Display a list of products with images, prices, and descriptions
+- Add products to a cart
+- Remove products from the cart
+- Persistent cart using local storage (frontend-only implementation)
+- Responsive design with Tailwind CSS
+- Routing using React Router with correct GitHub Pages support
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+---
 
-Note: This will impact Vite dev & build performances.
+## Tech Stack
+- **Frontend:** React.js, Tailwind CSS, React Router, Vite
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **Deployment:** GitHub Pages (frontend), optional backend hosted separately
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Installation
+
+### Clone the repository
+```bash
+git clone https://github.com/Nabin0224/Product-Listing-Page.git
+cd Product-Listing-Page
