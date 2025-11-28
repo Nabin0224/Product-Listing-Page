@@ -1,5 +1,6 @@
 {
   "name": "product-listing-page",
+  "homepage": "https://nabin0224.github.io/Product-Listing-Page",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +10,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist",
-  "predeploy": "npm run build"
+    "predeploy": "npm run build"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",
