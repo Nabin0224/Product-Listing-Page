@@ -1,12 +1,12 @@
-import { ThemeProvider } from 'next-themes'
-import React, { children } from 'react'
+import { ThemeProvider } from "next-themes";
+import React, { children } from "react";
 
-const AppThemeProvider = ({children}) => {
+const AppThemeProvider = ({ children }) => {
   return (
-    <ThemeProvider attribute="class" defaultTheme='light' enableSystem>
-        {children}
+    <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+      {children}
     </ThemeProvider>
   );
-}
+};
 
-export default AppThemeProvider
+export default AppThemeProvider;

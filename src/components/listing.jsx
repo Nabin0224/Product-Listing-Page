@@ -12,7 +12,12 @@ import {
 import LoadingSkeleton from "./ui/loading";
 import { Spinner } from "./ui/spinner";
 
-const ShoppingListing = ({cartItems, setCartItems, handleAddToCart, handleDeleteCart}) => {
+const ShoppingListing = ({
+  cartItems,
+  setCartItems,
+  handleAddToCart,
+  handleDeleteCart,
+}) => {
   const [queryProduct, setQueryProduct] = useState("");
   const [selectedFilter, setSelectedFilter] = useState("");
   const [sortBy, setSortBy] = useState("");
@@ -32,11 +37,6 @@ const ShoppingListing = ({cartItems, setCartItems, handleAddToCart, handleDelete
     };
     fetchCategories();
   }, []);
-
-  // const { data, isLoading } = useQuery({
-  //   queryKey: ["products"],
-  //   queryFn: fetchProducts,
-  // });
 
   const {
     data,
@@ -108,7 +108,6 @@ const ShoppingListing = ({cartItems, setCartItems, handleAddToCart, handleDelete
   console.log(filteredProducts, "temp");
   console.log(sortBy, "sortby");
   console.log(category, "category all");
-
 
   return (
     <>
@@ -186,7 +185,10 @@ const ShoppingListing = ({cartItems, setCartItems, handleAddToCart, handleDelete
         <LoadingSkeleton />
       ) : (
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mx-2 p-4">
-          <ShoppingProductTile products={filteredProducts} handleAddToCart={handleAddToCart}  />
+          <ShoppingProductTile
+            products={filteredProducts}
+            handleAddToCart={handleAddToCart}
+          />
         </div>
       )}
 
