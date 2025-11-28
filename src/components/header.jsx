@@ -25,12 +25,14 @@ const Header = ({cartItem, handleDeleteCart}) => {
           <LogIn width={20} height={20} strokeWidth={1} />
           <Sheet >
   <SheetTrigger asChild>
-   {
-    cartItem && cartItem.length > 0 ? 
+
     <button className="relative">
-    <ShoppingBag width={20} height={20} strokeWidth={1} /> <span className="absolute -top-3 -left-3 bg-black text-white rounded-full text-xs px-[4px]">{cartItem.length}</span>
-  </button> : null
-   }
+    
+  
+    <ShoppingBag width={20} height={20} strokeWidth={1} />   { cartItem && cartItem.length > 0 ? <span className="absolute -top-3 -left-3 bg-black text-white rounded-full text-xs px-[4px]">{cartItem.length}</span> : null }
+   
+  </button> 
+
   </SheetTrigger>
   <SheetContent side="right" className="w-[400px] sm:w-[340px] bg-white/70 backdrop-blur-2xl dark:text-white dark:bg-neutral-800 overflow-y-auto overflow-x-hidden p-4">
     <SheetHeader>

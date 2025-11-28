@@ -9,7 +9,7 @@ import AppThemeProvider from './theme-provider'
 const queryClient = new QueryClient();
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/Product-Listing-Page/'>
     <QueryClientProvider client={queryClient}>
   <AppThemeProvider>
   <App />
