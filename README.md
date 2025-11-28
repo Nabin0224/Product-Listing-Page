@@ -25,22 +25,21 @@ The app demonstrates the ability to fetch, display, and manage products using Re
 ---
 
 ## Folder Structure
-
-
-├─ Product-Listing-Page/          
-│   ├─ src/
-│   │   ├─ components/     
-│   │   ├─ pages/          
-│   │   ├─ App.jsx        
-│   │   └─ main.jsx       
-│   ├─ public/             
-│   └─ vite.config.js      
+```
+Product-Listing-Page/
+├─ src/
+│  ├─ components/     
+│  ├─ pages/         
+│  ├─ App.jsx         
+│  └─ main.jsx        # Entry point
+├─ public/            
+├─ vite.config.js     
 ├─ .gitignore
 ├─ package.json
 ├─ README.md
-└─ dist/                  
+└─ dist/            
 
----
+```
 
 ## Installation
 
