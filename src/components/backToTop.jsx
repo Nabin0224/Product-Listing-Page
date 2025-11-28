@@ -28,7 +28,7 @@ const BackToTop = () => {
    <>
    <button
    onClick={handleScrollToTop}
-   className={`fixed bottom-5 right-10 p-4 bg-white/30 rounded-full hover:bg-gray-200 hover:shadow-md hover:backdrop-blur-md text-black/70 backdrop-blur-sm transition-opacity duration-500 ${visible ? "opacity-100" : "opacity-0 pointer-events-none"} `}
+   className={`z-[9999] fixed bottom-5 right-10 p-4 bg-white/30 rounded-full hover:bg-gray-200 hover:shadow-md hover:backdrop-blur-md text-black/70 backdrop-blur-sm transition-opacity duration-500 ${visible ? "opacity-100" : "opacity-0 pointer-events-none"} `}
    >
    Back to Top
    </button>
